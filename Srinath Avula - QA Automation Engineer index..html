@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)file:///C:/Users/avula/Downloads/Srinath%20Avula%20-%20QA%20Automation%20Engineer.html -->
+<html lang="en" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srinath Avula - QA Automation Engineer</title>
+    <meta name="description" content="Resume of Srinath Avula, QA Automation Test Engineer specializing in Cypress, Selenium, and API validation.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Srinath Avula - QA Automation Engineer index_files/css2" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="./Srinath Avula - QA Automation Engineer index_files/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+/* ==========================================================================
+   CSS Variables & Theming
+   ========================================================================== */
+   :root {
+    /* Colors */
+    --bg-dark: #0a0a0a;
+    --bg-card: rgba(23, 23, 23, 0.6);
+    --bg-card-hover: rgba(38, 38, 38, 0.8);
+    
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    
+    --accent-primary: #3b82f6; /* Blue */
+    --accent-secondary: #8b5cf6; /* Purple */
+    --accent-cyan: #06b6d4; /* Cyan */
+    
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-hover: rgba(255, 255, 255, 0.2);
+    
+    /* Typography */
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Outfit', sans-serif;
+    
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--accent-primary);
+}
+
+p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Effects & Animations
+   ========================================================================== */
+.glass-nav {
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.glass-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hover-glow:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
+}
+
+.hover-up {
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+}
+
+.hover-up:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-hover);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.title-accent {
+    color: var(--accent-primary);
+    font-size: 0.8em;
+    font-family: var(--font-display);
+    font-weight: 800;
+    margin-right: 8px;
+}
+
+.text-accent {
+    color: var(--accent-secondary);
+}
+
+/* Background Blobs */
+.blob-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    opacity: 0.5;
+    animation: float 20s infinite ease-in-out alternate;
+}
+
+.blob-1 {
+    top: -10%;
+    left: -10%;
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, rgba(59,130,246,0.3) 0%, rgba(10,10,10,0) 70%);
+    animation-delay: 0s;
+}
+
+.blob-2 {
+    bottom: 10%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, rgba(139,92,246,0.25) 0%, rgba(10,10,10,0) 70%);
+    animation-delay: -5s;
+}
+
+.blob-3 {
+    top: 30%;
+    left: 50%;
+    width: 30vw;
+    height: 30vw;
+    background: radial-gradient(circle, rgba(6,182,212,0.2) 0%, rgba(10,10,10,0) 70%);
+    animation-delay: -10s;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(5%, 5%) scale(1.1); }
+    100% { transform: translate(-5%, 10%) scale(0.9); }
+}
+
+/* Glitch Text Effect */
+.glitch-text {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.02em;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.glitch-text::before {
+    left: -2px;
+    text-shadow: 2px 0 var(--accent-cyan);
+    animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+    left: 2px;
+    text-shadow: -2px 0 var(--accent-secondary);
+    animation: glitch-anim-2 2.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip-path: inset(20% 0 80% 0); }
+    20% { clip-path: inset(60% 0 10% 0); }
+    40% { clip-path: inset(40% 0 50% 0); }
+    60% { clip-path: inset(80% 0 5% 0); }
+    80% { clip-path: inset(10% 0 70% 0); }
+    100% { clip-path: inset(30% 0 50% 0); }
+}
+@keyframes glitch-anim-2 {
+    0% { clip-path: inset(10% 0 60% 0); }
+    20% { clip-path: inset(30% 0 20% 0); }
+    40% { clip-path: inset(70% 0 10% 0); }
+    60% { clip-path: inset(20% 0 50% 0); }
+    80% { clip-path: inset(90% 0 5% 0); }
+    100% { clip-path: inset(40% 0 30% 0); }
+}
+
+/* Reveal on scroll */
+.section-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.section-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container-md {
+    max-width: 900px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+    white-space: nowrap;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--border-color);
+    margin-left: 20px;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+    transition: padding var(--transition-normal), background var(--transition-normal);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-brand {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent-primary);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--accent-primary);
+    bottom: -5px;
+    left: 0;
+    transition: width var(--transition-fast);
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    width: 100%;
+}
+
+/* Mobile Nav */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.mobile-nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70vw;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(15px);
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right var(--transition-slow);
+    border-left: 1px solid var(--border-color);
+}
+
+.mobile-nav-menu.open {
+    right: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.mobile-nav-menu ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mobile-nav-menu a {
+    font-size: 1.5rem;
+    font-family: var(--font-display);
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .menu-toggle { display: block; }
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.greeting {
+    color: var(--accent-primary);
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.role {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.badge i {
+    margin-right: 0.5rem;
+    color: var(--accent-primary);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: var(--font-display);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-primary {
+    background: var(--accent-primary);
+    color: #fff;
+    border: 1px solid var(--accent-primary);
+    margin-right: 1rem;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: var(--accent-primary);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-outline:hover {
+    border-color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Header Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    animation: fadeInOut 2s infinite;
+}
+
+.mouse {
+    width: 26px;
+    height: 40px;
+    border: 2px solid var(--text-secondary);
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: var(--accent-primary);
+    border-radius: 2px;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s infinite;
+}
+
+.smooth-scroll-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+@keyframes scroll {
+    0% { top: 6px; opacity: 1; }
+    100% { top: 20px; opacity: 0; }
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+}
+
+
+/* ==========================================================================
+   Summary Section
+   ========================================================================== */
+.section-card {
+    padding: 3rem;
+}
+
+.summary-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.summary-text strong {
+    color: var(--accent-cyan);
+}
+
+
+/* ==========================================================================
+   Experience Section (Timeline)
+   ========================================================================== */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 60px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent-primary);
+    border: 4px solid var(--bg-dark);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+    z-index: 1;
+}
+
+.timeline-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.date-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: rgba(139, 92, 246, 0.15);
+    color: var(--accent-secondary);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.job-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    font-size: 1rem;
+    color: var(--accent-cyan);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.task-list {
+    list-style-type: none;
+}
+
+.task-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 0.8rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.task-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Projects Section
+   ========================================================================== */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.folder-icon {
+    font-size: 2.5rem;
+    color: var(--accent-primary);
+}
+
+.year {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.2rem;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.project-title:hover {
+    color: var(--accent-primary);
+    cursor: default;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+
+.small-text li {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .task-list {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.tech-stack span {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+
+/* ==========================================================================
+   Skills Section
+   ========================================================================== */
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    cursor: default;
+}
+
+.skill-tag:hover {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(6, 182, 212, 0.1);
+}
+
+
+/* ==========================================================================
+   Education & Certifications
+   ========================================================================== */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.split-col {
+    padding: 2.5rem;
+}
+
+.col-title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.edu-item h4 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+.inst {
+    color: var(--accent-primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.edu-meta {
+    display: flex;
+    gap: 1rem;
+}
+
+.year-badge, .score-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.score-badge {
+    color: var(--accent-cyan);
+    background: rgba(6, 182, 212, 0.1);
+}
+
+.cert-list {
+    list-style: none;
+}
+
+.cert-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.cert-list li::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    color: var(--accent-secondary);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    background: rgba(10, 10, 10, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    padding: 2rem 0;
+}
+
+.footer-content p {
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.footer-links a:hover {
+    color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+
+/* Utils */
+.pt-lg { padding-top: 2rem; }
+.pt-md { padding-top: 1rem; }
+.ms-sm { margin-left: 0.5rem; }
+.pe-sm { padding-right: 0.5rem; }
+.mb-xl { margin-bottom: 4rem; }
+
+</style>
+</head>
+<body class="bg-dark text-gray antialiased">
+    
+    <!-- Background Animated Blobs -->
+    <div class="blob-wrapper">
+        <div class="blob blob-1" style="transform: translate(-10.375px, -11.025px);"></div>
+        <div class="blob blob-2" style="transform: translate(-5.1875px, -5.5125px);"></div>
+        <div class="blob blob-3" style="transform: translate(-3.45833px, -3.675px);"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-content">
+            <a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#home" class="nav-brand">SA.</a>
+            <ul class="nav-links">
+                <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#about">About</a></li>
+                <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#experience">Experience</a></li>
+                <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#projects">Projects</a></li>
+                <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#skills">Skills</a></li>
+                <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#education">Education &amp; Certs</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div id="mobile-nav" class="mobile-nav-menu">
+        <span class="close-menu" id="close-menu"><i class="fas fa-times"></i></span>
+        <ul>
+            <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#about" class="mobile-link">About</a></li>
+            <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#experience" class="mobile-link">Experience</a></li>
+            <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#projects" class="mobile-link">Projects</a></li>
+            <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#skills" class="mobile-link">Skills</a></li>
+            <li><a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#education" class="mobile-link">Education &amp; Certs</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section-reveal active">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="glitch-text" data-text="Srinath Avula">Srinath Avula</h1>
+                <h2 class="role">QA Automation Test Engineer</h2>
+                <div class="contact-badges">
+                    <a href="mailto:avulasrinath225@gmail.com" class="badge hover-lift" target="_blank">
+                        <i class="fas fa-envelope"></i> avulasrinath225@gmail.com
+                    </a>
+                    <a href="tel:+916281358815" class="badge hover-lift" target="_blank">
+                        <i class="fas fa-phone"></i> +91 6281358815
+                    </a>
+                    <a href="https://github.com/Srinathavula" class="badge hover-lift" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/srinathavula/" class="badge hover-lift" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <span class="badge">
+                        <i class="fas fa-map-marker-alt"></i> Hyderabad, India
+                    </span>
+                </div>
+                <div class="hero-actions pt-lg">
+                    <a href="file:///C:/Users/avula/.gemini/antigravity/scratch/srinath-resume/index.html#about" class="btn btn-primary">Discover More</a>
+                    <a href="https://drive.google.com/drive/folders/1QUuvGy9JZ9iD5hGH7LDNhh7eyJC9kL4S?usp=sharing" target="_blank" class="btn btn-outline" id="download-btn">View My Certifications <i class="fas fa-external-link-alt ms-sm"></i></a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p class="smooth-scroll-text">Scroll Down</p>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section id="about" class="section section-reveal">
+            <div class="container section-card glass-card">
+                <h2 class="section-title"><span class="title-accent">01.</span> Summary</h2>
+                <p class="summary-text">
+                    Dedicated <strong>QA Automation Engineer</strong> with a strong foundation in end-to-end testing and API validation within financial and e-commerce domains. Proficient in developing automated test suites using <strong>Cypress</strong> and <strong>Selenium WebDriver</strong> to enhance software quality and release efficiency. Skilled in JavaScript, Java, and SQL for designing robust test scripts and performing deep-level database validation. Committed to identifying critical defects and streamlining the Software Testing Life Cycle (STLC) through continuous learning and the application of modern AI-driven tools. Eager to contribute technical expertise to high-impact projects in a collaborative multi-national corporation environment.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="title-accent">02.</span> Work Experience</h2>
+                
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card hover-glow">
+                            <span class="date-badge">Jan 2026 - Mar 2026</span>
+                            <h3 class="job-title">QA Automation Engineer Intern</h3>
+                            <h4 class="company"><i class="fas fa-building ms-sm pe-sm"></i> Pixelvide | <i class="fas fa-map-marker-alt ms-sm pe-sm"></i> Hyderabad, India</h4>
+                            <ul class="task-list">
+                                <li>Designed and executed 100+ manual functional and regression test cases for financial transaction and payroll modules.</li>
+                                <li>Automated 30+ end-to-end test scenarios using <strong>Cypress</strong> and <strong>JavaScript</strong> to increase release confidence and reduce manual effort.</li>
+                                <li>Built reusable automation scripts following <strong>Page Object Model (POM)</strong> principles to improve test suite maintainability.</li>
+                                <li>Generated comprehensive Mochawesome reports to provide stakeholders with clear pass/fail metrics and execution logs.</li>
+                                <li>Validated 10+ REST API endpoints using Postman to test CRUD operations, response payloads, and error handling.</li>
+                                <li>Identified and documented defects in JIRA with detailed reproduction steps and severity classifications for efficient resolution.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section section-reveal">
+            <div class="container">
+                <h2 class="section-title"><span class="title-accent">03.</span> Projects</h2>
+                
+                <div class="grid-cards">
+                    <!-- Project 1 (Amazon E-Commerce) -->
+                    <div class="card glass-card hover-up">
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="year">2026</div>
+                        </div>
+                        <h3 class="project-title">Amazon (Redmi Note 9)</h3>
+                        <p class="project-desc">
+                            Automated critical e-commerce user journeys including login, product search, and add-to-cart workflows.
+                        </p>
+                        <ul class="task-list small-text">
+                            <li>Supported payment gateway interactions &amp; cross-browser runs (Chrome, Edge).</li>
+                            <li>Implemented Cypress scripts validating UI and session persistence.</li>
+                            <li>Developed reusable POM components for three major modules.</li>
+                            <li>Collaborated on end-to-end purchasing flows for mobile.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Selenium Java</span>
+                            <span>Cypress</span>
+                            <span>POM</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 (Alison.com) -->
+                    <div class="card glass-card hover-up">
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="year">2025</div>
+                        </div>
+                        <h3 class="project-title">Alison.com Automation Framework</h3>
+                        <p class="project-desc">
+                            Robust scalable automation framework for continuous testing focusing on critical user authentication and security flows.
+                        </p>
+                        <ul class="task-list small-text">
+                            <li>Developed 18 detailed login test cases.</li>
+                            <li>Automated backend login testing via API endpoints.</li>
+                            <li>Integrated Mochawesome reporter with embedded screenshots.</li>
+                            <li>Structured project using modular architecture (POM).</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Cypress</span>
+                            <span>JavaScript</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="card glass-card hover-up">
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="year">2023</div>
+                        </div>
+                        <h3 class="project-title">AI Chatbot for Pregnancy Support</h3>
+                        <p class="project-desc">
+                            NLP-powered chatbot using LSTM to provide support for pregnancy-related user queries.
+                        </p>
+                        <ul class="task-list small-text">
+                            <li>Full functional and workflow testing of generated responses.</li>
+                            <li>Validated accuracy and edge cases across query categories.</li>
+                            <li>Evaluated system handling of high query volumes.</li>
+                            <li>Resolved 97%+ of pregnancy-related user queries.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>ML/NLP</span>
+                            <span>LSTM</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Smart Traffic System) -->
+                    <div class="card glass-card hover-up">
+                        <div class="card-header">
+                            <div class="folder-icon"><i class="far fa-folder-open"></i></div>
+                            <div class="year">2022</div>
+                        </div>
+                        <h3 class="project-title">Density-Based Smart Traffic System</h3>
+                        <p class="project-desc">
+                            ML-based automation system using Digital Image Processing to detect vehicle density.
+                        </p>
+                        <ul class="task-list small-text">
+                            <li>Systematic test case execution against expected signal behavior.</li>
+                            <li>Validated Canny Edge Detection and image processing modules.</li>
+                            <li>Tested real-time response integration with traffic light logic.</li>
+                            <li>Improved traffic control efficiency by 89%.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Image Processing</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-reveal">
+            <div class="container container-md">
+                <h2 class="section-title"><span class="title-accent">04.</span> Technical Skills</h2>
+                
+                <div class="skills-wrapper">
+                    <div class="skill-category">
+                        <h3>Automation Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Selenium WebDriver</span>
+                            <span class="skill-tag">Cypress</span>
+                            <span class="skill-tag">Katalon Studio</span>
+                            <span class="skill-tag">Applitools</span>
+                            <span class="skill-tag">Testim</span>
+                            <span class="skill-tag">Functionize</span>
+                            <span class="skill-tag">TestRigor</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>API Testing &amp; Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">REST API</span>
+                            <span class="skill-tag">JSON/XML Validation</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Frameworks &amp; Testing Concepts</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">TestNG</span>
+                            <span class="skill-tag">POM</span>
+                            <span class="skill-tag">Data-Driven Testing</span>
+                            <span class="skill-tag">STLC &amp; SDLC</span>
+                            <span class="skill-tag">Regression</span>
+                            <span class="skill-tag">Integration</span>
+                            <span class="skill-tag">Smoke &amp; Sanity</span>
+                            <span class="skill-tag">Defect Life Cycle</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools, Platforms &amp; AI Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">JIRA</span>
+                            <span class="skill-tag">Git &amp; GitHub</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Mochawesome</span>
+                            <span class="skill-tag">ChatGPT</span>
+                            <span class="skill-tag">Claude</span>
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">Gemini</span>
+                            <span class="skill-tag">MCP &amp; RAG</span>
+                            <span class="skill-tag">LLM &amp; Prompting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="section section-reveal mb-xl">
+            <div class="container">
+                <h2 class="section-title"><span class="title-accent">05.</span> Education &amp; Certifications</h2>
+                
+                <div class="split-layout">
+                    <!-- Education -->
+                    <div class="split-col glass-card">
+                        <h3 class="col-title"><i class="fas fa-graduation-cap text-accent pe-sm"></i> Education</h3>
+                        <div class="edu-item">
+                            <h4>B.Tech in Computer Science &amp; Engineering</h4>
+                            <p class="inst">SVS Group of Institutions, Warangal, India</p>
+                            <div class="edu-meta">
+                                <span class="year-badge">2023</span>
+                                <span class="score-badge">66.6%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="split-col glass-card">
+                        <h3 class="col-title"><i class="fas fa-certificate text-accent pe-sm"></i> Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Software Testing Certification — Eduonix</li>
+                            <li>Java &amp; SQL Programming Certifications — OneRoadmap</li>
+                            <li>TCS iON Career Edge — IT Foundations &amp; Young Professional</li>
+                            <li>Agentic AI Expert — Ready Tensor, Inc.</li>
+                            <li>AI Generalist &amp; Generative AI Mastermind — Outskill</li>
+                            <li>Google Gemini AI Certified Student</li>
+                            <li>Google Skills Badge — AI &amp; Cloud</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Designed &amp; Built by <strong>Srinath Avula</strong></p>
+            <div class="footer-links pt-md">
+                <a href="mailto:avulasrinath225@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+916281358815" target="_blank"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/Srinathavula" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/srinathavula/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu');
+    const closeMenuBtn = document.getElementById('close-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    const toggleMenu = () => {
+        mobileNav.classList.toggle('open');
+        document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    };
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Navbar Scroll Effect
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.style.padding = '0';
+            navbar.style.background = 'rgba(10, 10, 10, 0.85)';
+            navbar.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.3)';
+        } else {
+            navbar.style.padding = '10px 0';
+            navbar.style.background = 'rgba(10, 10, 10, 0.7)';
+            navbar.style.boxShadow = 'none';
+        }
+    });
+
+    // Intersection Observer for Reveal Animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
+
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Optional: Stop observing once revealed
+                // observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const revealSections = document.querySelectorAll('.section-reveal');
+    revealSections.forEach(section => {
+        sectionObserver.observe(section);
+    });
+
+    // Active Link Highlighting
+    const sections = document.querySelectorAll('section');
+    const navLinksList = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // Subtract navbar height for offset
+            if (scrollY >= sectionTop - 100) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinksList.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    // Mouse movement interaction for background blobs (Subtle parallax)
+    const blobs = document.querySelectorAll('.blob');
+    
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+        
+        blobs.forEach((blob, index) => {
+            const speed = (index + 1) * 20;
+            const moveX = (window.innerWidth / 2 - e.clientX) / speed;
+            const moveY = (window.innerHeight / 2 - e.clientY) / speed;
+            
+            blob.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    });
+});
+
+</script>
+
+
+
+</body></html>
